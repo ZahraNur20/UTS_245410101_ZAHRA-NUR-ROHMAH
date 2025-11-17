@@ -1,8 +1,8 @@
 # UTS_245410101_ZAHRA-NUR-ROHMAH
 
-#JAWABAN UTS
+# JAWABAN UTS
 
-#**SOAL 1 :  Jelaskan teorema CAP dan BASE dan keterkaitan keduanya. Jelaskan menggunakan contoh yang pernah anda gunakan.**
+# **SOAL 1 :  Jelaskan teorema CAP dan BASE dan keterkaitan keduanya. Jelaskan menggunakan contoh yang pernah anda gunakan.**
 
 1. Teorema CAP (Consistency, Availability, Partition Tolerance)
    Teorema CAP menyatakan bahwa dalam sistem terdistribusi, Anda hanya dapat menjamin dua dari tiga properti berikut secara bersamaan:
@@ -30,7 +30,7 @@
 
    Ketika aku mengunggah foto di Instagram, sistem bekerja dengan pendekatan BASE agar aplikasi tetap responsif. Begitu foto aku upload, Instagram langsung menampilkannya di profil meskipun proses penyimpanan dan penyebaran datanya ke banyak server di seluruh dunia belum selesai—hal ini menunjukkan Basically Available, karena fitur tetap bisa dipakai tanpa menunggu semua server sinkron. Setelah itu, sering kali caption, jumlah like, atau komentar tidak langsung muncul atau berubah-ubah; kondisi ini disebut Soft State, sebab data masih dalam proses penyebaran antar server dan belum mencapai keadaan stabil. Beberapa saat kemudian, ketika proses sinkronisasi antar node selesai dan jaringan kembali normal, semua data seperti jumlah like, komentar, dan caption akhirnya seragam di semua server—ini yang disebut Eventually Consistent. Dengan cara kerja seperti ini, Instagram memastikan penggunanya bisa tetap menggunakan aplikasi dengan lancar, sementara konsistensi data diperbarui secara bertahap di belakang layar.
    
-#**SOAL 2 : Jelaskan keterkaitan antara GraphQL dengan komunikasi antar proses pada sistem terdistribusi. Buat diagramnya.**
+# **SOAL 2 : Jelaskan keterkaitan antara GraphQL dengan komunikasi antar proses pada sistem terdistribusi. Buat diagramnya.**
 
 Dalam sistem terdistribusi, komunikasi antar proses menjadi sangat penting karena setiap layanan biasanya berjalan terpisah. Di sini GraphQL memiliki peran besar sebagai penghubung, bukan pengganti. Jadi, GraphQL aku anggap sebagai gerbang utama tempat client mengirim permintaan, lalu GraphQL meneruskannya ke berbagai layanan di belakang layar.
 
